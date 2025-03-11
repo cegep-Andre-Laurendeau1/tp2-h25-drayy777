@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class DVD {
+public class DVD extends Document{
     private String directeur;
     private int duree;
     private String note;
