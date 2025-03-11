@@ -4,12 +4,11 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-
 @Entity
 @Table(name = "dvd")
 @Getter
 @Setter
-public class DVD extends Document{
+public class DVD extends Document {
     @Column(name = "directeur")
     private String directeur;
 

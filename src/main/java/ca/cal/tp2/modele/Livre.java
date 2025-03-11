@@ -1,15 +1,14 @@
 package ca.cal.tp2.modele;
 
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import jakarta.persistence.*;
-
 
 @Entity
 @Table(name = "livre")
 @Getter
 @Setter
-public class Livre extends Document{
+public class Livre extends Document {
     @Column(name = "isbn")
     private String ISBN;
 

@@ -5,14 +5,13 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
-import java.util.List;
-
 
 @Entity
 @Table(name = "emprunt")
 @Getter
 @Setter
 public class Emprunt {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "emprunt_id")
@@ -27,7 +26,4 @@ public class Emprunt {
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private Emprunteur emprunteur;
-
-    @OneToMany(mappedBy = "emprunt", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<EmpruntDetail> empruntDetails;
 }

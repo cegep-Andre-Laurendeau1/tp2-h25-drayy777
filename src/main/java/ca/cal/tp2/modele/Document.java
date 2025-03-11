@@ -3,7 +3,6 @@ package ca.cal.tp2.modele;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import java.util.List;
 
 @Entity
 @Table(name = "document")
@@ -21,8 +20,4 @@ public abstract class Document {
 
     @Column(name = "nb_exemplaires")
     private int nbExemplaires;
-
-    @OneToMany(mappedBy = "document")
-    private List<EmpruntDetail> empruntDetails;
 }
-

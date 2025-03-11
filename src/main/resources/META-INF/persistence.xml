@@ -5,10 +5,10 @@
 
     <persistence-unit name="hibernate2.ex1">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-
+        <class>ca.cal.tp2.modele.Document</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:mem:tp2iliesseaisset"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:mem:tp2iliesseaisset;DB_CLOSE_DELAY=-1"/>
             <property name="jakarta.persistence.jdbc.user" value="sa"/>
             <property name="jakarta.persistence.jdbc.password" value=""/>
 
